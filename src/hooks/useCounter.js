@@ -5,7 +5,7 @@ import { useState } from 'react';
  * 
  * @param {number} [value = 0] Es el valor inicial del contador. 
  * @returns {{
- *   state: number, 
+ *   counter: number, 
  *   increment: (factor?: number) => void, 
  *   decrement: (factor?: number) => void,
  *   reset: () => void
@@ -14,22 +14,22 @@ import { useState } from 'react';
  */
 export const useCounter = (value = 0) => {
 
-    const [state, setState] = useState(value);
+    const [counter, setCounter] = useState(value);
 
     const increment = (factor = 1) => {
-        setState(s => s + factor);
+        setCounter(s => s + (typeof factor === 'number' ? factor : 1));
     };
 
     const decrement = (factor = 1) => {
-        setState(s => s - factor);
+        setCounter(s => s - (typeof factor === 'number' ? factor : 1));
     };
 
     const reset = () => {
-        setState(value);
+        setCounter(value);
     };
 
     return {
-        state,
+        counter,
         increment,
         decrement,
         reset
