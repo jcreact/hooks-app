@@ -13,9 +13,10 @@ import './index.css';
 // import { RealExampleRef } from './components/use-ref/RealExampleRef.jsx';
 // import { LayoutEffect } from './components/use-layout-effect/LayoutEffect.jsx';
 // import { Memorize } from './components/memos/Memorize.jsx';
-import { MemoHook } from './components/memos/MemoHook.jsx';
+// import { MemoHook } from './components/memos/MemoHook.jsx';
+import { CallbackHook } from './components/memos/CallbackHook.jsx';
 
 ReactDOM.render(
-    <MemoHook />,
+    <CallbackHook />,
     document.getElementById('app')
 );
