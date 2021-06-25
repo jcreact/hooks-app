@@ -10,9 +10,10 @@ import './index.css';
 // import { FormWithHook } from './components/use-effect/FormWithHook.jsx';
 // import { MultipleHooks } from './components/examples/MultipleHooks.jsx';
 // import { FocusScreen } from './components/use-ref/FocusScreen.jsx';
-import { RealExampleRef } from './components/use-ref/RealExampleRef.jsx';
+// import { RealExampleRef } from './components/use-ref/RealExampleRef.jsx';
+import { LayoutEffect } from './components/use-layout-effect/LayoutEffect.jsx';
 
 ReactDOM.render(
-    <RealExampleRef />,
+    <LayoutEffect />,
     document.getElementById('app')
 );
