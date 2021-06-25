@@ -8,10 +8,16 @@ export const CallbackHook = () => {
     // Como la función se vuelve a crear cada vez que el componente 'CallbackHook'
     // se renderiza, el 'ShowIncrement'también lo hace.
     // const increment = () => setCounter(counter + 1);
-
     // Una alternativa es utilizar el useCallback, para la función.
     //Y memorizar el ShowIncrement (con React.memo()).
+
+    /**
+     * Incrementa el `counter` en un factor.
+     */
     const increment = useCallback(
+        /**
+         * @param {number} factor - Factor de incremento.
+         */
         (factor = 1) => {
             setCounter((c) => c + factor);
         },

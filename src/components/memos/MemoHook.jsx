@@ -6,6 +6,10 @@ import { useCounter } from '../../hooks/useCounter';
 // Helpers
 import { heavyProcess } from '../../helpers/heavyProcess';
 
+/**
+ * Componente que utiliza el Hook `useMemo` para que la función `heavyProcess` sólo se
+ * ejecute cuando el `counter` haya cambiado.
+ */
 export const MemoHook = () => {
     const { counter, increment } = useCounter(5000);
     const [show, setShow] = useState(true);

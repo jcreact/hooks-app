@@ -14,9 +14,10 @@ import './index.css';
 // import { LayoutEffect } from './components/use-layout-effect/LayoutEffect.jsx';
 // import { Memorize } from './components/memos/Memorize.jsx';
 // import { MemoHook } from './components/memos/MemoHook.jsx';
-import { CallbackHook } from './components/memos/CallbackHook.jsx';
+// import { CallbackHook } from './components/memos/CallbackHook.jsx';
+import { Father } from './components/memos/tarea/Father.jsx';
 
 ReactDOM.render(
-    <CallbackHook />,
+    <Father />,
     document.getElementById('app')
 );
