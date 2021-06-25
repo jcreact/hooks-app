@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
 
+import { HookApp } from './HookApp.jsx';
+
 ReactDOM.render(
-    <h1>Hooks App</h1>,
+    <HookApp />,
     document.getElementById('app')
 );
