@@ -12,9 +12,10 @@ import './index.css';
 // import { FocusScreen } from './components/use-ref/FocusScreen.jsx';
 // import { RealExampleRef } from './components/use-ref/RealExampleRef.jsx';
 // import { LayoutEffect } from './components/use-layout-effect/LayoutEffect.jsx';
-import { Memorize } from './components/memos/Memorize.jsx';
+// import { Memorize } from './components/memos/Memorize.jsx';
+import { MemoHook } from './components/memos/MemoHook.jsx';
 
 ReactDOM.render(
-    <Memorize />,
+    <MemoHook />,
     document.getElementById('app')
 );
