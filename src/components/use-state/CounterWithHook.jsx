@@ -8,7 +8,7 @@ import { useCounter } from '../../hooks/useCounter';
  * @returns {JSX.Element} Renderización HTML del componente.
  */
 export const CounterWithHook = () => {
-    const { state, increment, decrement } = useCounter(10);
+    const { state, increment, decrement, reset } = useCounter(10);
 
     return (
         <>
@@ -20,6 +20,9 @@ export const CounterWithHook = () => {
                 onClick={() => decrement(2)}
             >
                 -1
+            </button>
+            <button className="btn btn-secondary me-2" onClick={() => reset()}>
+                Restablecer
             </button>
             <button className="btn btn-primary" onClick={() => increment(2)}>
                 +1
