@@ -9,9 +9,10 @@ import './index.css';
 // import { SimpleForm } from './components/use-effect/SimpleForm.jsx';
 // import { FormWithHook } from './components/use-effect/FormWithHook.jsx';
 // import { MultipleHooks } from './components/examples/MultipleHooks.jsx';
-import { FocusScreen } from './components/use-ref/FocusScreen.jsx';
+// import { FocusScreen } from './components/use-ref/FocusScreen.jsx';
+import { RealExampleRef } from './components/use-ref/RealExampleRef.jsx';
 
 ReactDOM.render(
-    <FocusScreen />,
+    <RealExampleRef />,
     document.getElementById('app')
 );
