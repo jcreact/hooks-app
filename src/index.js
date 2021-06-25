@@ -11,9 +11,10 @@ import './index.css';
 // import { MultipleHooks } from './components/examples/MultipleHooks.jsx';
 // import { FocusScreen } from './components/use-ref/FocusScreen.jsx';
 // import { RealExampleRef } from './components/use-ref/RealExampleRef.jsx';
-import { LayoutEffect } from './components/use-layout-effect/LayoutEffect.jsx';
+// import { LayoutEffect } from './components/use-layout-effect/LayoutEffect.jsx';
+import { Memorize } from './components/memos/Memorize.jsx';
 
 ReactDOM.render(
-    <LayoutEffect />,
+    <Memorize />,
     document.getElementById('app')
 );
