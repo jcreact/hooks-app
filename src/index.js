@@ -8,9 +8,10 @@ import './index.css';
 // import { CounterWithHook } from './components/use-state/CounterWithHook.jsx';
 // import { SimpleForm } from './components/use-effect/SimpleForm.jsx';
 // import { FormWithHook } from './components/use-effect/FormWithHook.jsx';
-import { MultipleHooks } from './components/examples/MultipleHooks.jsx';
+// import { MultipleHooks } from './components/examples/MultipleHooks.jsx';
+import { FocusScreen } from './components/use-ref/FocusScreen.jsx';
 
 ReactDOM.render(
-    <MultipleHooks />,
+    <FocusScreen />,
     document.getElementById('app')
 );
