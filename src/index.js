@@ -7,9 +7,10 @@ import './index.css';
 // import { CounterApp } from './components/use-state/CounterApp.jsx';
 // import { CounterWithHook } from './components/use-state/CounterWithHook.jsx';
 // import { SimpleForm } from './components/use-effect/SimpleForm.jsx';
-import { FormWithHook } from './components/use-effect/FormWithHook.jsx';
+// import { FormWithHook } from './components/use-effect/FormWithHook.jsx';
+import { MultipleHooks } from './components/examples/MultipleHooks.jsx';
 
 ReactDOM.render(
-    <FormWithHook />,
+    <MultipleHooks />,
     document.getElementById('app')
 );
