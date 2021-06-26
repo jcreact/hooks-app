@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export const useFetch = (url, wait = 0) => {
+export const useFetch = (url) => {
 
     const isMounted = useRef(true);
     const [state, setState] = useState({ data: null, error: null, loading: true });
@@ -21,19 +21,23 @@ export const useFetch = (url, wait = 0) => {
         reset();
         fetch(url)
             .then(resp => resp.json())
-            .then(data =>
-                setTimeout(() => {
-                    if (isMounted.current) {
-                        setState({
-                            loading: false,
-                            error: null,
-                            data
-                        });
-                    }
-                }, wait)
+            .then(data => {
+                if (isMounted.current) {
+                    setState({
+                        loading: false,
+                        error: null,
+                        data
+                    });
+                }
+            }).catch(() =>
+                setState({
+                    data: null,
+                    loading: false,
+                    error: 'No se pudo procesar la información'
+                })
             );
 
-    }, [url, wait]);
+    }, [url]);
 
     return state;
 
