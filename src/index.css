@@ -1,1 +1,17 @@
+.btn-circle {
+    width: 2rem;
+    height: 2rem;
+    padding: 0px 0px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.42857;
+}
 
+.pointer {
+    cursor: pointer;
+}
+
+.task-complete {
+    text-decoration: line-through;
+}
