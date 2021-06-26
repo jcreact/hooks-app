@@ -13,6 +13,10 @@ export const useForm = (formValues = {}) => {
         setValues({ ...values, [target.name]: target.value });
     };
 
-    return [values, handleInputChange];
+    const reset = () => {
+        setValues(formValues);
+    };
+
+    return [values, handleInputChange, reset];
 
 };
