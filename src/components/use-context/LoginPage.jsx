@@ -18,7 +18,7 @@ export const LoginPage = () => {
         evt.preventDefault();
         setUser({ id: new Date().getTime(), name, email });
         reset();
-        document.querySelector(`input[name:'email']`).select();
+        document.querySelector(`input[name='email']`)?.select();
     };
 
     return (
