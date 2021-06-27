@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'ToDoList.jsx'. Debe renderizar el componente ToDoListItem correctamente. 1`] = `
+<form
+  className="mb-3"
+  onSubmit={[Function]}
+>
+  <fieldset>
+    <div
+      className="form-floating"
+    >
+      <input
+        autoComplete="off"
+        autoFocus={true}
+        className="form-control"
+        name="task"
+        onChange={[Function]}
+        placeholder="..."
+        type="text"
+        value=""
+      />
+      <label>
+        New Task
+      </label>
+    </div>
+    <div
+      className="input-group mb-2"
+    />
+    <div
+      className=""
+      id="collapseInfo"
+    >
+      <div
+        className="input-group mb-2"
+      >
+        <span
+          className="input-group-text"
+        >
+          Project Name
+        </span>
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="project"
+          onChange={[Function]}
+          type="text"
+          value="Personal"
+        />
+        <button
+          className="btn btn-primary shadow-none"
+          disabled={true}
+          type="submit"
+        >
+          <i
+            className="bi bi-journal-plus me-2"
+          />
+          Add
+        </button>
+      </div>
+      <div
+        className="d-flex justify-content-end"
+      />
+    </div>
+  </fieldset>
+</form>
+`;

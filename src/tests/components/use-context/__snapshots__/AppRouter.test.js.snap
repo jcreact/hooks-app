@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'HomePage.jsx'. Debe renderizar el componente HomePage correctamente. 1`] = `
+<div>
+  <nav
+    className="navbar navbar-expand-sm navbar-dark bg-dark"
+  >
+    <div
+      className="container-fluid"
+    >
+      <a
+        aria-current="page"
+        className="navbar-brand active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          className="bi bi-bug"
+        />
+         React App | useContext
+      </a>
+      <div
+        className="navbar-nav"
+      >
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+        <a
+          aria-current={null}
+          className="nav-link"
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+        <a
+          aria-current={null}
+          className="nav-link"
+          href="/login"
+          onClick={[Function]}
+        >
+          Login
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main
+    className="container-fluid"
+  >
+    Array [
+      <h1
+        className="mt-3"
+      >
+        Home Page
+      </h1>,
+      <hr />,
+      <pre
+        className="font-monospace"
+      >
+        {
+   "name": "José Palma",
+   "email": "test@correo.com"
+}
+      </pre>,
+    ]
+  </main>
+</div>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'HomePage.jsx'. Debe renderizar el componente HomePage correctamente. 1`] = `
+Array [
+  <h1
+    className="mt-3"
+  >
+    Home Page
+  </h1>,
+  <hr />,
+  <pre
+    className="font-monospace"
+  >
+    {
+   "name": "José Palma",
+   "email": "test@correo.com"
+}
+  </pre>,
+]
+`;

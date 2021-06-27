@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'RealExampleRef.jsx'. Debe renderizar el componente RealExampleRef correctamente. 1`] = `
+<Fragment>
+  <button
+    className="btn btn-primary mt-3"
+    onClick={[Function]}
+  >
+    Mostar Citas
+  </button>
+</Fragment>
+`;

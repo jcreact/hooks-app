@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en la aplicación 'ToDoApp.jsx'. Debe renderizar la aplicación 'TodoApp.jsx' correctamente. 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="mt-3 d-flex justify-content-start align-items-start"
+  >
+    <h1>
+      To-Do App
+    </h1>
+    <span
+      className="badge bg-danger rounded-pill"
+    >
+      0
+    </span>
+  </div>
+  <hr />
+  <ToDoAdd
+    handleAdd={[Function]}
+  />
+  <ToDoList
+    handleToggle={[Function]}
+    removeTask={[Function]}
+    todos={Array []}
+  />
+</div>
+`;

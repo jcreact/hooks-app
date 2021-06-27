@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'LoginPage.jsx'. Debe renderizar el componente HomePage correctamente. 1`] = `
+<div
+  className="d-flex flex-column justify-content-center align-items-center"
+  style={
+    Object {
+      "height": "90vh",
+    }
+  }
+>
+  <div
+    className="border border-1 border-dark bg-dark shadow"
+    style={
+      Object {
+        "borderRadius": "8px",
+        "width": "40vw",
+      }
+    }
+  >
+    <form
+      className="my-4 mx-3"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-floating mb-3"
+      >
+        <input
+          autoComplete="off"
+          autoFocus={true}
+          className="form-control"
+          name="email"
+          onChange={[Function]}
+          placeholder="."
+          type="text"
+          value="palmahn@gmail.com"
+        />
+        <label>
+          Email
+        </label>
+      </div>
+      <div
+        className="form-floating mb-4"
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="password"
+          onChange={[Function]}
+          placeholder="."
+          type="password"
+          value=""
+        />
+        <label>
+          Password
+        </label>
+      </div>
+      <div
+        className="d-grid col-6 mx-auto"
+      >
+        <button
+          className="btn btn-outline-secondary btn-lg text-light"
+          style={
+            Object {
+              "borderRadius": "25px",
+            }
+          }
+          type="submit"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

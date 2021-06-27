@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'ToDoList.jsx'. Debe renderizar el componente ToDoListItem correctamente. 1`] = `
+<ol
+  className="list-group"
+>
+  <ToDoListItem
+    handleToggle={[MockFunction]}
+    index={0}
+    key="1"
+    removeTask={[MockFunction]}
+    todo={
+      Object {
+        "done": false,
+        "id": 1,
+        "project": "Personal",
+        "task": "Tarea 1",
+      }
+    }
+  />
+  <ToDoListItem
+    handleToggle={[MockFunction]}
+    index={1}
+    key="2"
+    removeTask={[MockFunction]}
+    todo={
+      Object {
+        "done": true,
+        "id": 2,
+        "project": "Personal",
+        "task": "Tarea 2",
+      }
+    }
+  />
+  <ToDoListItem
+    handleToggle={[MockFunction]}
+    index={2}
+    key="3"
+    removeTask={[MockFunction]}
+    todo={
+      Object {
+        "done": false,
+        "id": 3,
+        "project": "Personal",
+        "task": "Tarea 3",
+      }
+    }
+  />
+</ol>
+`;

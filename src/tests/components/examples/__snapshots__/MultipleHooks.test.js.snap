@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'MultipleHooks.jsx'. Debe renderizar el componente MultipleHooks correctamente. 1`] = `
+<Fragment>
+  <h1
+    className="mt-3"
+  >
+    BreakingBad Quotes
+  </h1>
+  <hr />
+  <Spinner />
+  <button
+    className="btn btn-outline-primary"
+    disabled={true}
+    onClick={[MockFunction]}
+  >
+    <i
+      className="bi bi-caret-right-fill"
+    />
+     Siguiente
+  </button>
+</Fragment>
+`;
+
+exports[`Pruebas en el componente 'MultipleHooks.jsx'. Debe renderizar una cita. 1`] = `
+<Fragment>
+  <h1
+    className="mt-3"
+  >
+    BreakingBad Quotes
+  </h1>
+  <hr />
+  <figure
+    className="text-end border border-1 border-success rounded-3 shadow"
+  >
+    <blockquote
+      className="blockquote me-3 mt-2"
+    >
+      <p>
+        !Es todo un show!
+      </p>
+    </blockquote>
+    <figcaption
+      className="blockquote-footer me-3"
+    >
+      José Palma
+       
+      <cite>
+        "
+        La Vida
+        "
+      </cite>
+    </figcaption>
+  </figure>
+  <button
+    className="btn btn-outline-primary"
+    disabled={false}
+    onClick={[MockFunction]}
+  >
+    <i
+      className="bi bi-caret-right-fill"
+    />
+     Siguiente
+  </button>
+</Fragment>
+`;
