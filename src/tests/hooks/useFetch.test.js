@@ -36,8 +36,6 @@ describe(`Pruebas en el Hook 'useFetch.js'.`, () => {
         await waitForNextUpdate();
         const { data, error, loading } = result.current;
 
-        console.log(data);
-
         expect(data).toBeNull();
         expect(error).toBe('No se pudo procesar la información');
         expect(loading).toBeFalsy();
