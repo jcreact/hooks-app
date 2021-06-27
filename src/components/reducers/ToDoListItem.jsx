@@ -30,7 +30,7 @@ export const ToDoListItem = ({
             <div className="ms-2 me-auto">
                 <div className="fw-bold">[{project}]</div>
                 <span className={`${done && 'text-decoration-line-through'}`}>
-                    {index}. {task}
+                    {index + 1}. {task}
                 </span>
             </div>
 

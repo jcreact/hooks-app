@@ -39,7 +39,7 @@ describe(`Pruebas en el componente 'ToDoListItem.jsx'.`, () => {
     });
 
     test(`Debe mostrar la descripción y el proyecto de la tarea correctamente.`, () => {
-        expect(component.find('span').text()).toBe(`${index}. ${todo.task}`);
+        expect(component.find('span').text()).toBe(`${index + 1}. ${todo.task}`);
         expect(component.find('div.fw-bold').text()).toBe(`[${todo.project}]`);
         expect(component.find('span').hasClass('text-decoration-line-through')).toBe(todo.done);
     });
