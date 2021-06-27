@@ -11,7 +11,7 @@ const initializerToDos = () => {
     return JSON.parse(localStorage.getItem('todos')) || [];
 };
 
-export const TodoApp = () => {
+export const ToDoApp = () => {
     const [todos, dispatch] = useReducer(todoReducer, [], initializerToDos);
 
     useEffect(() => {

@@ -16,10 +16,10 @@ import './index.css';
 // import { MemoHook } from './components/memos/MemoHook.jsx';
 // import { CallbackHook } from './components/memos/CallbackHook.jsx';
 // import { Father } from './components/memos/tarea/Father.jsx';
-import { TodoApp } from './components/reducers/TodoApp.jsx';
+import { ToDoApp } from './components/reducers/ToDoApp.jsx';
 // import { MainApp } from './components/use-context/MainApp.jsx';
 
 ReactDOM.render(
-    <TodoApp />,
+    <ToDoApp />,
     document.getElementById('app')
 );
