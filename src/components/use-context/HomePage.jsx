@@ -5,8 +5,6 @@ import { UserContext } from './UserContext';
 export const HomePage = () => {
     const { user } = useContext(UserContext);
 
-    console.log(user);
-
     return (
         <>
             <h1 className="mt-3">Home Page</h1>

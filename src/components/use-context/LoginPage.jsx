@@ -1,18 +1,13 @@
-import React, { useContext, useLayoutEffect, useRef } from 'react';
+import React, { useContext } from 'react';
 import { useForm } from '../../hooks/useForm';
 import { UserContext } from './UserContext';
 
 export const LoginPage = () => {
-    const emailRef = useRef();
     const [{ email, name, password }, handleInputChange, reset] = useForm({
         email: 'palmahn@gmail.com',
         name: 'José Palma',
         password: '',
     });
-
-    useLayoutEffect(() => {
-        emailRef.current.select();
-    }, []);
 
     const { setUser } = useContext(UserContext);
 
@@ -23,7 +18,7 @@ export const LoginPage = () => {
         evt.preventDefault();
         setUser({ id: new Date().getTime(), name, email });
         reset();
-        emailRef.current.select();
+        document.querySelector(`input[name:'email']`).select();
     };
 
     return (
@@ -46,9 +41,8 @@ export const LoginPage = () => {
                             name="email"
                             value={email}
                             onChange={handleInputChange}
-                            ref={emailRef}
                         />
-                        <label htmlFor="name">Email</label>
+                        <label>Email</label>
                     </div>
                     <div className="form-floating mb-4">
                         <input
@@ -60,7 +54,7 @@ export const LoginPage = () => {
                             value={password}
                             onChange={handleInputChange}
                         />
-                        <label htmlFor="password">Password</label>
+                        <label>Password</label>
                     </div>
                     <div className="d-grid col-6 mx-auto">
                         <button
