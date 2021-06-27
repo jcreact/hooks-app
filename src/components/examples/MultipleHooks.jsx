@@ -3,7 +3,7 @@ import React from 'react';
 import { Spinner } from '../Spinner.jsx';
 
 import { useFetch } from '../../hooks/useFetch';
-import { useCounter } from '../../hooks/useCounter.js';
+import { useCounter } from '../../hooks/useCounter';
 
 export const MultipleHooks = () => {
     const { counter, increment } = useCounter(1);
