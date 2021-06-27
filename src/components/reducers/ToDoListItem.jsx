@@ -16,8 +16,6 @@ export const ToDoListItem = ({
     removeTask,
     handleToggle,
 }) => {
-    console.log('ToDoItem[show]');
-
     return (
         <li
             className="list-group-item d-flex justify-content-between align-items-center pointer"
