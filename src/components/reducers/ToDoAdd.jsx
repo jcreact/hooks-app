@@ -10,8 +10,6 @@ import { useForm } from '../../hooks/useForm';
  * @param {(todo: {id: number, project:string, task:string, done:boolean}) => void} props.handleAdd - Referencia a la función para agregar una tarea.
  */
 export const ToDoAdd = ({ handleAdd }) => {
-    console.log('ToDoAdd[show]');
-    const taskRef = useRef();
     const [{ task, project }, handleInputChange, reset] = useForm({
         task: '',
         project: 'Personal',
@@ -36,7 +34,7 @@ export const ToDoAdd = ({ handleAdd }) => {
 
         handleAdd(newTodo);
         reset();
-        taskRef.current.select();
+        document.querySelector(`input[name='task']`)?.select();
     };
 
     return (
@@ -47,15 +45,13 @@ export const ToDoAdd = ({ handleAdd }) => {
                         type="text"
                         className="form-control"
                         name="task"
-                        id="taskInput"
                         placeholder="..."
                         value={task}
                         onChange={handleInputChange}
-                        ref={taskRef}
                         autoComplete="off"
                         autoFocus
                     />
-                    <label htmlFor="taskInput">New Task</label>
+                    <label>New Task</label>
                 </div>
 
                 <div className="input-group mb-2"></div>
