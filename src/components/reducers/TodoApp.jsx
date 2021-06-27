@@ -52,7 +52,7 @@ export const TodoApp = () => {
     };
 
     return (
-        <>
+        <div className="container-fluid">
             <div className="mt-3 d-flex justify-content-start align-items-start">
                 <h1>To-Do App</h1>
                 <span className="badge bg-danger rounded-pill">
@@ -68,6 +68,6 @@ export const TodoApp = () => {
                 removeTask={removeTask}
                 handleToggle={handleToggle}
             />
-        </>
+        </div>
     );
 };
